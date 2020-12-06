@@ -14,7 +14,10 @@ class POSTGRESQL:
         try:
             self.conn = psycopg2.connect(dbname=self.DB_NAME, user=self.DB_USER, 
                                 password=self.DB_PASS, host=self.DB_HOST)
+<<<<<<< HEAD
             self.cur = self.conn.cursor()
+=======
+>>>>>>> 0a71fbd2914b51d299fc7da407a0f2570eecbeb7
             print('Successfully connected')
         except:
             print('problema conecto')
@@ -29,25 +32,43 @@ class POSTGRESQL:
             print('U can`t dissconnect!')
         
 
+<<<<<<< HEAD
     def create(self):
         try:
             self.cur.execute("""
             CREATE TABLE Stu1(
+=======
+    def create(cur, conn):
+        try:
+            cur.execute("""
+            CREATE TABLE Student2(
+>>>>>>> 0a71fbd2914b51d299fc7da407a0f2570eecbeb7
                 ID INT PRIMARY KEY NOT NULL,
                 NAME TEXT NOT NULL,
                 SURNAME TEXT NOT NULL
             )
             """)
+<<<<<<< HEAD
             self.conn.commit()
+=======
+            conn.commit()
+>>>>>>> 0a71fbd2914b51d299fc7da407a0f2570eecbeb7
             print("Successfully inserted")
         except:
             print('Prodblems with insertion')
 
+<<<<<<< HEAD
 
     def inserting_data(self):
         try:
             self.cur.execute("INSERT INTO Student2(ID, NAME, SURNAME) VALUES(1, 'Darina', 'Rodicheva')")
             self.conn.commit()
+=======
+    def inserting_data(cur, conn):
+        try:
+            cur.execute("INSERT INTO Student2(ID, NAME, SURNAME) VALUES(1, 'Darina', 'Rodicheva')")
+            conn.commit()
+>>>>>>> 0a71fbd2914b51d299fc7da407a0f2570eecbeb7
             print("Successfully iserted data!")
         except:
             print("Problem with data!")
@@ -86,11 +107,18 @@ class POSTGRESQL:
 def main():
     db = POSTGRESQL()
     
+<<<<<<< HEAD
     db.create()
+=======
+>>>>>>> 0a71fbd2914b51d299fc7da407a0f2570eecbeb7
     
  #   cur = conn.cursor()
 
 
     
 
+<<<<<<< HEAD
 #main()
+=======
+main()
+>>>>>>> 0a71fbd2914b51d299fc7da407a0f2570eecbeb7
