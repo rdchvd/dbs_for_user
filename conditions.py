@@ -43,3 +43,13 @@ def cond(col_names, sql):
     
     return sql
 
+def input_format(st):
+    a = input(st)
+
+    try:
+        a = int(a)
+
+    except ValueError:
+        if a.capitalize() in ['True', 'False']:
+            a = bool(a.capitalize())
+    return a

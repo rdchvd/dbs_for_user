@@ -1,4 +1,17 @@
 from ifexist import table_exists
+
+def input_format(st):
+    a = input(st)
+
+    try:
+        a = int(a)
+
+    except ValueError:
+        if a.capitalize() in ['True', 'False']:
+            a = bool(a.capitalize())
+    return a
+
+
 def insert(cur, conn, tb):
 
     tb = table_exists(cur, conn, tb)
