@@ -11,10 +11,15 @@ and then
 name_of_virtual_environment_directory/Scripts/activate.bat
 
 then in your terminal u'll see (name_of_virtual_environment_directory) c:\path\to\working\directory
+
+
 2. INSTALL SOME PACKAGES
+
 Write on terminal the following:
 
 pip install -r requirements.txt
+
+
 
 3. RUN
 python3 mysqll.py
