@@ -1,4 +1,4 @@
 DBHOST = 'localhost'
-DBUSER = 'darina'
-DBPASS = 'orirul89'
+DBUSER = 'anyuser'
+DBPASS = 'somepass'
 CHOSEN_DB = 'test_ms'
