@@ -3,7 +3,7 @@
 <div>
 The project helps user to easily interact with some types of databases without special knowledge of programming languages or sql commands.
 <hr>
-<p><i>At the moment the project is under development, therefore its functionality and general appearance is very disturbing. 
+<p><i>At the moment the project is under development, therefore its functionality and general appearance is very disturbing.
   If you still want to enjoy its functionality, follow <b>Getting Started</b>.</i></p>
 <hr>
 </div>
