@@ -1,15 +1,10 @@
 from create import create
 from delete import delete
-from ifexist import table_check
+from ifexist import input_tb, table_check
 from insert import insert
-from mysqll_connection import mysql_connect
+from mysqll_connection import *
 from read import read
 from update import update
-
-
-def input_tb():
-    tb = input("Введіть назву таблиці: ")
-    return tb
 
 
 def new_tb(tb):

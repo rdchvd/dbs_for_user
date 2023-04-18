@@ -1,4 +1,6 @@
-from mysqll import input_tb
+def input_tb():
+    tb = input("Введіть назву таблиці: ")
+    return tb
 
 
 def table_exists(cur, conn, tb):

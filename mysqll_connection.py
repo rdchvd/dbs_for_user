@@ -1,5 +1,6 @@
 import pymysql.cursors
 
+from config import *
 from config import CHOSEN_DB, DBHOST, DBPASS, DBUSER
 
 
